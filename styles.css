@@ -1,0 +1,131 @@
+/* - Mobile: 375px
+- Desktop: 1440px */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColorPB: hsl(225, 100%, 94%);
+  --primaryColorBB: hsl(245, 75%, 52%);
+  --neutralVPB: hsl(225, 100%, 98%);
+  --neutralDB: hsl(224, 23%, 55%);
+  --neutralDarkB: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: url("./assets/pattern-background-mobile.svg") center/cover
+    no-repeat;
+  background-color: rgb(214, 225, 255);
+}
+
+.order-container {
+  width: 90vw;
+  max-width: 520px;
+  margin: 5rem auto;
+  padding-bottom: 1rem;
+  text-align: center;
+  background: white;
+  border-radius: 1rem;
+}
+
+.img-hero {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.order-container h1 {
+  color: var(--neutralDarkB);
+  margin-bottom: 2rem;
+}
+
+.order-text {
+  font-size: 1.5rem;
+  color: var(--neutralDB);
+  width: 75%;
+  margin: 0 auto;
+  line-height: 2.5rem;
+}
+
+.order-plan-container {
+  background: var(--neutralVPB);
+  margin: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.25rem;
+  padding: 2rem 0;
+}
+
+.order-plan-container a {
+  font-weight: bold;
+}
+
+.order-plan-container a:hover {
+  text-decoration: none;
+  color: #d6b5f5;
+}
+
+.music-icon {
+  width: 5rem;
+}
+
+.order-plan {
+  color: var(--neutralDarkB);
+}
+
+.order-year {
+  color: var(--neutralDB);
+  font-weight: lighter;
+}
+
+.btn {
+  display: block;
+  margin: 2rem auto;
+  background-color: var(--primaryColorBB);
+  border-radius: 1rem;
+  border: transparent;
+  width: 88%;
+  padding: 1.5rem 0;
+  color: white;
+  font: inherit;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0.25rem 2rem 2.5rem var(--neutralDB);
+}
+
+.btn:hover {
+  background-color: #d6b5f5;
+}
+
+.btn-cancel {
+  background-color: transparent;
+  color: var(--neutralDB);
+  box-shadow: none;
+}
+
+.btn-cancel:hover {
+  background-color: transparent;
+  color: var(--neutralDarkB);
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    background: url("./assets/pattern-background-desktop.svg") center top/cover
+      no-repeat;
+    background-color: rgb(214, 225, 255);
+  }
+
+  .order-container {
+    max-width: 600px;
+  }
+}
